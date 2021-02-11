@@ -1,0 +1,17 @@
+D:\Tuition\3LayerInventorySystem\DataAccess\bin\Debug\DataAccess.dll
+D:\Tuition\3LayerInventorySystem\DataAccess\bin\Debug\DataAccess.pdb
+D:\Tuition\3LayerInventorySystem\DataAccess\bin\Debug\Models.dll
+D:\Tuition\3LayerInventorySystem\DataAccess\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Tuition\3LayerInventorySystem\DataAccess\bin\Debug\System.Security.AccessControl.dll
+D:\Tuition\3LayerInventorySystem\DataAccess\bin\Debug\System.Security.Permissions.dll
+D:\Tuition\3LayerInventorySystem\DataAccess\bin\Debug\System.Security.Principal.Windows.dll
+D:\Tuition\3LayerInventorySystem\DataAccess\bin\Debug\Models.pdb
+D:\Tuition\3LayerInventorySystem\DataAccess\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Tuition\3LayerInventorySystem\DataAccess\bin\Debug\System.Security.AccessControl.xml
+D:\Tuition\3LayerInventorySystem\DataAccess\bin\Debug\System.Security.Permissions.xml
+D:\Tuition\3LayerInventorySystem\DataAccess\bin\Debug\System.Security.Principal.Windows.xml
+D:\Tuition\3LayerInventorySystem\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+D:\Tuition\3LayerInventorySystem\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+D:\Tuition\3LayerInventorySystem\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+D:\Tuition\3LayerInventorySystem\DataAccess\obj\Debug\DataAccess.dll
+D:\Tuition\3LayerInventorySystem\DataAccess\obj\Debug\DataAccess.pdb
