@@ -52,52 +52,6 @@
    
   </div>
 </section>
-<!-- /contact -->
-
-
- <%--<h2>Add a new customer</h2>
- <div class="form-group row">
-        <label for="customerNo" class="col-sm-2 col-form-label">Customer Id</label>
-        <div class="col-sm-10">
-            <asp:TextBox class="form-control" ID="txtCustomerID" runat="server" placeholder="id" ></asp:TextBox>
-        </div>
-    </div>
- 
-    <div class="form-group row">
-        <label for="customerName" class="col-sm-2 col-form-label">Customer Name</label>
-        <div class="col-sm-10">
-            <asp:TextBox class="form-control" ID="txtCustomerName" runat="server" placeholder="customer name"></asp:TextBox>
-        </div>
-    </div>
-    <div class="form-group row">
-        <label for="city" class="col-sm-2 col-form-label">City</label>
-        <div class="col-sm-10">
-
-            <asp:TextBox class="form-control" ID="txtCity" runat="server" placeholder="city"></asp:TextBox>
-        </div>
-    </div>
-    <div class="form-group row">
-        <label for="grade" class="col-sm-2 col-form-label">Grade</label>
-        <div class="col-sm-10">
-            <asp:TextBox class="form-control" ID="txtGrade" runat="server" placeholder="Grade"></asp:TextBox>
-        </div>
-    </div>
-    <div class="form-group row">
-        <label for="SalesmanID" class="col-sm-2 col-form-label">Salesman ID</label>
-        <div class="col-sm-10">
-            <asp:TextBox class="form-control" ID="txtSalesmanID" runat="server" ></asp:TextBox>
-        </div>
-    </div>
-    <div class="form-group row">
-        <div class="col-sm-10">
-            <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Enter Customer"></asp:Button>
-            <br />
-        </div>
-    </div>
-
-    <asp:Label ID="lblResult" runat="server" Text="Label"></asp:Label>
-     <h1><span class="badge badge-success btn-lg btn-block">Existing Customers</span></h1>
-    <asp:GridView ID="gvCustomer" runat="server"></asp:GridView>--%>
 
 
 </asp:Content>

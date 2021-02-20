@@ -28,5 +28,6 @@ namespace BusinessLogic
             DBAccess addContact = new DBAccess();
             addContact.AddNewContact(newContact);
         }
+
     }
 }

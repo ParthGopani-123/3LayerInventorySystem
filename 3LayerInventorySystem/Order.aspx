@@ -14,7 +14,7 @@
 </section>
 <!-- /page title -->
 
-    <!-- contact -->
+<!-- contact -->
 <section class="section bg-gray">
   <div class="container">
     <div class="row">

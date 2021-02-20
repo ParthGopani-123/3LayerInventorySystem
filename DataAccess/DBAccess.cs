@@ -12,18 +12,27 @@ namespace DataAccess
 {
     public class DBAccess
     {
-        static string connectionString = ConfigurationManager.ConnectionStrings["InventoryConnectionString"].ConnectionString;
-        SqlConnection connection = new SqlConnection(connectionString);
+        private string _connectionString;
+        private SqlConnection _connection;
+
+        public DBAccess()
+        {
+            _connectionString = ConfigurationManager.ConnectionStrings["InventoryConnectionString"].ConnectionString;
+            _connection = new SqlConnection(_connectionString);
+        }
 
         public int InsertSalesman(ModelSalesman salesman)
         {
+            _connectionString = ConfigurationManager.ConnectionStrings["InventoryConnectionString"].ConnectionString;
+            _connection = new SqlConnection(_connectionString);
+
             try
             {
                 string query = $"Insert Into Salesman (salesman_id, name, city, commision) Values ({salesman.SalesmanId}, '{salesman.Name}', '{salesman.City}', {salesman.Commision});";
-                SqlCommand cmd = new SqlCommand(query, connection);
-                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, _connection);
+                _connection.Open();
                 int result = cmd.ExecuteNonQuery();
-                connection.Close();
+                _connection.Close();
                 cmd.Dispose();
                 return result;
             }
@@ -42,9 +51,9 @@ namespace DataAccess
 
             try
             {
-                connection.Open();
+                _connection.Open();
                 string query = "select * from salesman";
-                SqlCommand cmd = new SqlCommand(query, connection);
+                SqlCommand cmd = new SqlCommand(query, _connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 adapter.Fill(DT);
 
@@ -59,7 +68,7 @@ namespace DataAccess
             }
             finally
             {
-                connection.Close();
+                _connection.Close();
             }
         }
 
@@ -68,11 +77,11 @@ namespace DataAccess
             try
             {
                 string query = $"INSERT INTO Customer (customer_id, cust_name, city, grade, salesman_id) VALUES ({customer.CustomerId},'{customer.CustomerName}','{customer.City}',{customer.Grade},{customer.SalesmanId});";
-                SqlCommand cmd = new SqlCommand(query, connection);
+                SqlCommand cmd = new SqlCommand(query, _connection);
 
-                connection.Open();
+                _connection.Open();
                 int result = cmd.ExecuteNonQuery();
-                connection.Close();
+                _connection.Close();
                 cmd.Dispose();
                 return result;
             }
@@ -90,9 +99,9 @@ namespace DataAccess
 
             try
             {
-                connection.Open();
+                _connection.Open();
                 string query = "SELECT * FROM Customer";
-                SqlCommand cmd = new SqlCommand(query, connection);
+                SqlCommand cmd = new SqlCommand(query, _connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 adapter.Fill(DT);
 
@@ -107,7 +116,7 @@ namespace DataAccess
             }
             finally
             {
-                connection.Close();
+                _connection.Close();
             }
         }
 
@@ -116,11 +125,11 @@ namespace DataAccess
             try
             {
                 string query = $"INSERT INTO Contact (name, email, subject, message) VALUES ('{newContact.Name}','{newContact.Email}','{newContact.Subject}','{newContact.Message}');";
-                SqlCommand cmd = new SqlCommand(query, connection);
+                SqlCommand cmd = new SqlCommand(query, _connection);
 
-                connection.Open();
+                _connection.Open();
                 cmd.ExecuteNonQuery();
-                connection.Close();
+                _connection.Close();
                 cmd.Dispose();
                 
             }
@@ -131,5 +140,6 @@ namespace DataAccess
             }
 
         }
+
     }
 }
